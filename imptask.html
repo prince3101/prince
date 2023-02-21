@@ -1,0 +1,258 @@
+<html>
+    <head>
+        <title> task </title>
+        <style>
+            .title{
+                background-color: aqua;
+                
+            }
+            .test{
+                background-color:coral;
+                border: 10px; 
+                width: 200px;
+                height: 100px;
+                border-style:ridge;
+            }
+            .text{
+                background-color: cadetblue;
+            }
+            .table2{
+                background-color: hotpink;
+                border: 10px; 
+                width: 200px;
+                height: 100px;
+                border-style:inset;
+            }
+            .legend3{
+                background-color: lawngreen;
+            }
+            .table3{
+                background-color: orchid;
+                border: 10px; 
+                width: 200px;
+                height: 100px;
+                border-style:outset;
+            }
+        </style>
+    </head>
+    <script>
+        function details()
+        {
+        
+           var a = document.getElementById("fn").value;
+           var b = document.getElementById("ln").value;
+           var c = document.getElementById("sex").value;
+           var d = document.getElementById("mail").value;
+           var e = document.getElementById("date").value;
+           var f = document.getElementById("city").value;
+           var g = document.getElementById("ht").value;
+           var h = document.getElementById("wt").value;
+           var i = document.getElementById("add").value;
+           var j = document.getElementById("pc").value;
+    
+           document.getElementById("name").innerHTML = "First Name      : " + a ;
+           document.getElementById("name2").innerHTML = "Last Name      : " + b ;
+           document.getElementById("gend").innerHTML = "Gender          : " + c;
+           document.getElementById("emal").innerHTML = "E-mail          : " + d;
+           document.getElementById("db").innerHTML = "Date of Birthdate : " + e;
+           document.getElementById("ct").innerHTML = "City              : " + f;
+           document.getElementById("hh").innerHTML = "Hiegth            : " + g;
+           document.getElementById("wh").innerHTML = "Width             : " + h;
+           document.getElementById("ass").innerHTML = "Address          : " + i;
+           document.getElementById("pcode").innerHTML = "Pincode        : " + j;
+
+        }
+        function education()
+        {
+            var a = document.getElementById("sn").value;
+            var b = document.getElementById("st").value;
+            var c = document.getElementById("year").value;
+            var d = document.getElementById("pr").value;
+            var e = document.getElementById("clg").value;
+            var f = document.getElementById("str").value;
+            var g = document.getElementById("rol").value;
+
+            document.getElementById("sch").innerHTML = "School name     : " + a ;
+            document.getElementById("std").innerHTML = "Stander         : " + b ;
+            document.getElementById("ye").innerHTML = "Year             : " + c ;
+            document.getElementById("prs").innerHTML = "Persantage      : " + d ;
+            document.getElementById("colg").innerHTML = "Collage        : " + e ;
+            document.getElementById("srm").innerHTML = "Stream          : " + f ;
+            document.getElementById("rno").innerHTML = "Roll no.        : " + g ;
+        }
+        function firstsem()
+        {
+            var a = document.getElementById("net").value;
+            var b = document.getElementById("web").value;
+            var c = document.getElementById("off").value;
+            var d = document.getElementById("os").value;
+            var e = document.getElementById("c").value;
+            var f = document.getElementById("cs").value;
+
+            var mark = parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d)+parseInt(e)+parseInt(f);
+            var Persantage = parseInt(mark)/180*100;
+
+            
+
+            document.getElementById("sub1").innerHTML = "Networking         : " + a ;
+            document.getElementById("sub2").innerHTML = "Web tecnology      : " + b ;
+            document.getElementById("sub3").innerHTML = "Office sute        : " + c ;
+            document.getElementById("sub4").innerHTML = "Opreating system   : " + d ;
+            document.getElementById("sub5").innerHTML = "C langauge         : " + e ;
+            document.getElementById("sub6").innerHTML = "Coumincation skill : " + d ;
+
+            document.getElementById("tot").innerHTML = "total      : " + mark ;
+            document.getElementById("per").innerHTML = "parsantage : " + Persantage ;
+            
+            
+        }
+    </script>
+    <body>
+        <form>
+            <fieldset>
+                <legend class="title"> GET PERSONAL DETAILS </legend>
+                <table class="test">
+
+                <tr>
+                <td><lable> First name : </lable></td>
+                <td><input type="text" placeholder="fname" id="fn"></td>
+                <td><lable> Last name : </lable></td>
+                <td><input type="text" placeholder="lname" id="ln"></td>
+
+                </tr>
+                <tr>
+
+                <td><lable> gender : </lable></td>
+                <td><input type="text" placeholder="male/female" id="sex"></td>
+                <td><lable> E-mail : </lable></td>
+                <td><input type="text" placeholder="name@gmail.com" id="mail"></td>
+
+                </tr>
+                <tr>
+
+                    <td><lable> Date Of Birthdate : </lable></td>
+                    <td><input type="text" placeholder="birhtdate" id="date"></td>
+                    <td><lable> City : </lable></td>
+                    <td><input type="text" placeholder="city" id="city"></td>
+
+                </tr>
+                <tr>
+
+                    <td><lable> hight : </lable></td>
+                    <td><input type="text" placeholder="hight" id="ht"></td>
+                    <td><lable> width : </lable></td>
+                    <td><input type="text" placeholder="width" id="wt"></td>
+
+                </tr>
+                <tr>
+
+                    <td><lable> Address : </lable></td>
+                    <td><input type="text" placeholder="address" id="add"></td>
+                    <td><lable> Pincode : </lable></td>
+                    <td><input type="text" placeholder="code" id="pc"></td>
+                </tr>
+                <tr>
+
+                    <td><button type="button" onclick="details()"> get details </button></td>
+                    <td><button type="reset">reset</button></td>
+
+                </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend class="text"> EDUCSTION </legend>
+                <table class="table2">
+                    <tr>
+
+                        <td><lable> School name : </lable></td>
+                        <td><input type="text" placeholder="sname" id="sn"></td>
+                        <td><lable> Stander : </lable></td>
+                        <td><input type="text" placeholder="th" id="st"></td>
+                        <td><lable> year : </lable></td>
+                        <td><input type="text" placeholder="1999" id="year"></td>
+                        <td><lable> Persentage : </lable></td>
+                        <td><input type="text" placeholder="%" id="pr"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td><lable> Collage : </lable></td>
+                        <td><input type="text" placeholder="clg" id="clg"></td>
+                        <td><lable> Stream  : </lable></td>
+                        <td><input type="text" placeholder="stream" id="str"></td>
+                        <td><lable> Roll no : </lable></td>
+                        <td><input type="text" placeholder="R no." id="rol"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td><button type="button" onclick="education()"> get details </button></td>
+                        <td><button type="reset">reset</button></td>
+    
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend class="legend3"> FIRST SEM RESULT : </legend>
+                <table class="table3">
+                <tr>
+
+                    <td><lable> Network : </lable></td>
+                    <td><input type="text" placeholder="mark" id="net"></td>
+                    <td><lable> Web tecnology : </lable></td>
+                    <td><input type="text" placeholder="mark" id="web"></td>
+
+                </tr>
+                <tr>
+
+                    <td><lable> Office sute : </lable></td>
+                    <td><input type="text" placeholder="mark" id="off"></td>
+                    <td><lable> Opreating system : </lable></td>
+                    <td><input type="text" placeholder="mark" id="os"></td>
+                
+                </tr>
+                <tr>
+
+                    <td><lable> Basic og application programing : </lable></td>
+                    <td><input type="text" placeholder="mark" id="c"></td>
+                    <td><lable> Comunication skill : </lable></td>
+                    <td><input type="text" placeholder="mark" id="cs"></td>
+
+                </tr>
+                <tr>
+
+                    <td><button type="button" onclick="firstsem()"> get details </button></td>
+                    <td><button type="reset">reset</button></td>
+
+                </tr>
+                </table>
+            </fieldset>
+        </form>
+        <h2 id="name"></h2>
+        <h2 id="name2"></h2>
+        <h2 id="gend"></h2>
+        <h2 id="emal"></h2>
+        <h2 id="db"></h2>
+        <h2 id="ct"></h2>
+        <h2 id="hh"></h2>
+        <h2 id="wh"></h2>
+        <h2 id="ass"></h2>
+        <h2 id="pcode"></h2>
+        <h2 id="sch"></h2>
+        <h2 id="std"></h2>
+        <h2 id="ye"></h2>
+        <h2 id="prs"></h2>
+        <h2 id="colg"></h2>
+        <h2 id="srm"></h2>
+        <h2 id="rno"></h2>
+        <h2 id="sub1"></h2>
+        <h2 id="sub2"></h2>
+        <h2 id="sub3"></h2>
+        <h2 id="sub4"></h2>
+        <h2 id="sub5"></h2>
+        <h2 id="sub6"></h2>
+        <h2 id="tot"></h2>
+        <h2 id="per"></h2>
+        
+    </body>
+</html>

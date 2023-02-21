@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title> resut demo </title>
+        <script>
+            function printN()
+            {
+                var yn;
+                yn = 'Your Name:-';
+                var na = document.getElementById("name").value;
+                document.getElementById("prince").innerHTML = yn + na;
+
+                var yr;
+                yn = 'Your Rollno:-';
+                var rn = document.getElementById("roll").value;
+                document.getElementById("eight").innerHTML = yn + rn;
+
+                var ys;
+                ys = 'Your Stream:-';
+                var sn = document.getElementById("stream").value;
+                document.getElementById("cloud").innerHTML = ys + sn;
+
+                var ysec;
+                ysec     = 'Your Section:-';
+                var dn = document.getElementById("sec").value;
+                document.getElementById("secb").innerHTML = ysec + dn;
+
+                var ysem;
+                ysem = 'Your Semester:-';
+                var sem = document.getElementById("sem").value;
+                document.getElementById("semester").innerHTML = ysem + sem;
+
+                var sub1;
+                sub1 = 'networking:-';
+                var mark = document.getElementById("net").value;
+                document.getElementById("network").innerHTML = sub1 + mark;
+
+                var sub2;
+                sub2 = 'web technology:-';
+                var mark = document.getElementById("web").value;
+                document.getElementById("web tech").innerHTML = sub2 + mark;
+
+                var sub3;
+                sub3 = 'office sute:-';
+                var mark = document.getElementById("ofs").value;
+                document.getElementById("office").innerHTML = sub3 + mark;
+
+                var sub4;
+                sub4 = 'opreating system:-';
+                var mark = document.getElementById("os").value;
+                document.getElementById("opreating").innerHTML = sub4 + mark;
+
+                
+                var sub5;
+                sub5 = 'ms office:-';
+                var mark = document.getElementById("ms").value;
+                document.getElementById("moff").innerHTML = sub5 + mark;
+
+                var sub6;
+                sub6 = 'communication skill:-';
+                var mark = document.getElementById("cs").value;
+                document.getElementById("commu").innerHTML = sub6 + mark;
+
+                var answer;
+                answer = 'answer:-';
+                var net = document.getElementById("net").value;
+                var web = document.getElementById("web").value;
+                var off = document.getElementById("ofs").value;
+                var os = document.getElementById("os").value;
+                var ms = document.getElementById("ms").value;
+                var cs = document.getElementById("cs").value;
+                var mark = parseInt(net) + parseInt(web) + parseInt(off) + parseInt(os) + parseInt(ms) + parseInt(cs)
+                document.getElementById("answ").innerHTML = answer + mark;
+
+                
+            }
+        </script>
+
+    </head>
+    <body>
+        <form>
+            <table border="2">
+            <tr>
+                 <td><lable> your name:- </lable></td>
+                 <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                 <td><lable> your roll number:- </lable></td>
+                 <td><input type="number" name="roll no." id="roll"></td>
+            </tr>
+            <tr>
+                 <td><lable> your stream:- </lable></td>
+                <td><input type="text" name="stream" id="stream"></td>
+            </tr>
+            <tr>
+                <td><lable> your section:- </lable></td>
+                <td><input type="text" name="sec" id="sec"></td>
+            </tr>
+            <tr>
+                <td><lable> your semester:- </lable></td>
+                <td><input type="text" name="sem" id="sem"></td>
+            </tr>
+            <tr>
+                <td><lable> networking </lable></td>
+                <td><input type="number" name="sub1" id="net"></td>
+            <tr>
+                <td><lable> web technology </lable></td>
+                <td><input type="number" name="sub1" id="web"></td>
+            </tr>
+            <tr>
+                <td><lable> office sute </lable></td>
+                <td><input type="number" name="sub1" id="ofs"></td>
+            </tr>
+            <tr>
+                <td><lable> opreating system </lable></td>
+                <td><input type="number" name="sub1" id="os"></td>
+            </tr>
+            <tr>
+                <td><lable> ms office </lable></td>
+                <td><input type="number" name="sub1" id="ms"></td>
+            </tr>
+            <tr>
+                <td><lable> communicaton skill </lable></td>
+                <td><input type="number" name="sub1" id="cs"></td>
+            </tr>
+            <tr>
+                <td><lable> answer </lable></td>
+                <td><input type="number"  id="ans"></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="printN()"> get result </button></td>
+                <td><button type="reset">reset</button></td>
+            </tr>
+        </table>
+            <h2 id="prince"></h2>
+            <h2 id="eight"></h2>
+            <h2 id="cloud"></h2>
+            <h2 id="secb"></h2>
+            <h2 id="semester"></h2>
+            <h2 id="network"></h2>
+            <h2 id="web tech"></h2>
+            <h2 id="office"></h2>
+            <h2 id="opreating"></h2>
+            <h2 id="moff"></h2>
+            <h2 id="commu"></h2>
+            <h2 id="answ"></h2>
+        </form>
+    </body>
+</html>

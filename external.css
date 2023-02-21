@@ -1,0 +1,17 @@
+h2{
+    color:red;
+}
+h3{
+    color:darkgray;
+}
+h4{
+    color:brown;
+}
+.test{
+    background-color: chartreuse;
+    color:green;
+    border:3px;
+    width:250px;
+    border-style: solid;
+    border-color: crimson;
+}

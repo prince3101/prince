@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> calculater by java script </title>
+        <style>
+            td{
+                padding: 10px;
+            }
+        </style>
+        <script>
+            
+            function addition()
+            {
+
+                var a=parseInt(document.getElementById("no.1").value);
+                var b=parseInt(document.getElementById("no.2").value);
+
+                document.getElementById("answer").innerHTML=a+b;
+            }
+            
+        </script>
+        <body>
+            <h2> calculater </h2>
+            <form> 
+                <table border="2">
+                <tr> 
+                    <td><lable> enter your first val : </lable></td>
+                    <td><input type="text" id="no.1"></td>
+                </tr>
+                <tr>
+                    <td><lable> enter your secound val : </lable></td>
+                    <td><input type="text" id="no.2"></td>
+                </tr>
+                <tr> 
+                    <td><lable> answer : </lable></td>
+                    <td><h2 id="answer"></h2></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="addition()"> = </button></td>
+                    <td><button type="reset">reset</button></td>
+                </tr>
+                </table>
+
+            </form>
+        </body>
+    </head>
+</html>

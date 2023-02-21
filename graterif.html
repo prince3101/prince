@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> grater </title>
+    </head>
+    <script>
+        function grater()
+        {
+            var a = document.getElementById("fv").value;
+            var b = document.getElementById("sv").value;
+
+            if(a>b)
+            {
+                document.getElementById("ans").innerHTML = "A is grater";
+            }
+            else
+            {
+                document.getElementById("ans").innerHTML = "b is grater";
+            }
+        }
+    </script>
+    <body>
+        <h2> grater </h2>
+        <form>
+            <table>
+                <tr>
+                    <td><lable> enter  first value : </lable></td>
+                    <td><input type="text" id="fv"></td>
+                </tr>
+                <tr>
+                    <td><lable> enter  second value : </lable></td>
+                    <td><input type="text" id="sv"></td>
+                </tr>
+                <tr> 
+                    <td><button type="button" onclick="grater()">cheak....</button></td>
+                </tr>
+
+            </table>
+        </form>
+        <h2 id="ans"></h2>
+    </body>
+</html>

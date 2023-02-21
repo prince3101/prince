@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Conditional Statement (method - By Reference)Task dated - 28/12/2022 </title>
+    </head>
+    <script>
+
+     
+
+            function singleif()
+            {
+                var a = document.getElementById("val1").value;   
+                var b = document.getElementById("val2").value;
+                if(a > 10)
+                {
+                   alert("A is Greater");
+                }
+            }
+
+            function ifelse()
+            {
+                var a = document.getElementById("val1").value;   
+                var b = document.getElementById("val2").value;
+                if(a > b)
+                {
+                    alert("A is Greater");
+                }
+                else
+                {
+                    alert("B is Greater");
+                }
+            }
+
+            function ifelseif()
+            {
+                var a = document.getElementById("val1").value;   
+                var b = document.getElementById("val2").value;
+                
+                if(a > b)
+                {
+                    alert("A is Greater");
+                }
+                else
+                {
+                    alert("Both Value are same");
+                }
+                elseif(b > a)
+                {
+                    alert("B is Greater");
+                }
+            }
+    </script>
+    <body>
+        <h2>Single if </h2>
+        <form>
+            <table>
+
+                <tr>
+                    <td><label>Enter The Value of A </label></td>
+                    <td><input type="text" id="val1">
+                </tr>
+
+                <tr>
+                    <td><label>Enter The Value of B </label></td>
+                    <td><input type="text" id="val2">
+                </tr>
+
+            </table>
+            
+            <button type="button" onclick="singleif()">
+                Single If
+            </button>
+
+            <button type="button" onclick="ifelse()">
+                IF..ELSE
+            </button>
+
+            <button type="button" onclick="ifelseif()">
+                IF..ELSE..if
+            </button>
+
+        </form>
+    </body>
+</html>
